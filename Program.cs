@@ -41,29 +41,61 @@ namespace BaiTap
                 //----------------------------------------------------------//
 
                 //Bai 3
-                Console.WriteLine("Nhap toa do tam C");
-                Console.Write("xC = ");
-                int xC = Convert.ToInt32(Console.ReadLine());
-                Console.Write("yC = ");
-                int yC = Convert.ToInt32(Console.ReadLine());
-                Console.Write("Ban kinh R = ");
-                float R = Convert.ToSingle(Console.ReadLine());
-                Console.WriteLine("Nhap toa do tam M");
-                Console.Write("xM = ");
-                int xM = Convert.ToInt32(Console.ReadLine());
-                Console.Write("yM = ");
-                int yM = Convert.ToInt32(Console.ReadLine());
+                // Console.WriteLine("Nhap toa do tam C");
+                // Console.Write("xC = ");
+                // int xC = Convert.ToInt32(Console.ReadLine());
+                // Console.Write("yC = ");
+                // int yC = Convert.ToInt32(Console.ReadLine());
+                // Console.Write("Ban kinh R = ");
+                // float R = Convert.ToSingle(Console.ReadLine());
+                // Console.WriteLine("Nhap toa do tam M");
+                // Console.Write("xM = ");
+                // int xM = Convert.ToInt32(Console.ReadLine());
+                // Console.Write("yM = ");
+                // int yM = Convert.ToInt32(Console.ReadLine());
 
-                double d;
+                // double d;
 
-                d = Math.Sqrt((xM-xC)*(xM-xC) + (yM-yC)*(yM-yC));
+                // d = Math.Sqrt((xM-xC)*(xM-xC) + (yM-yC)*(yM-yC));
                 
-                if (d<R)
-                    Console.WriteLine("Diem M nam trong duong tron!!");
-                else if(d>R)
-                    Console.WriteLine("Diem M nam ngoai duong tron!!");
-                    else 
-                    Console.WriteLine("Trung voi duong tron nhe!!");
+                // if (d<R)
+                //     Console.WriteLine("Diem M nam trong duong tron!!");
+                // else if(d>R)
+                //     Console.WriteLine("Diem M nam ngoai duong tron!!");
+                //     else 
+                //     Console.WriteLine("Trung voi duong tron nhe!!");
+                //--------------------------------------------------------------//
+
+                // Bai 4
+                Console.WriteLine("Nhap 3 canh cua tam giac");
+                Console.Write("a = ");
+                int a = Convert.ToInt32(Console.ReadLine());
+                Console.Write("b = ");
+                int b = Convert.ToInt32(Console.ReadLine());
+                Console.Write("c = ");
+                int c = Convert.ToInt32(Console.ReadLine());
+
+                float p ;
+                double S;
+
+                p = (a+b+c)/2;
+                S = Math.Sqrt(p*(p-a)*(p-b)*(p-c));
+
+                if(a==b && b==c && c==a )
+                    {
+                        Console.WriteLine("Tam giac deu");
+                        Console.WriteLine("Dien tich cua tam giac deu la: " + S);
+                    }
+                else if(a==b || b==c || c==a)
+                    {
+                        Console.WriteLine("Tam giac can");
+                        Console.WriteLine("Dien tich tam giac deu la " + S);
+                    }
+                    else if(a*a == b*b+c*c || b*b == a*a+c*c || c*c == a*a+b*b)
+                            {
+                                Console.WriteLine("Tam giac vuong");
+                                Console.WriteLine("Dien tich tam giac vuong la " + S);
+                            }
             }
         }
 }
