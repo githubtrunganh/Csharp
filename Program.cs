@@ -67,35 +67,55 @@ namespace BaiTap
                 //--------------------------------------------------------------//
 
                 // Bai 4
-                Console.WriteLine("Nhap 3 canh cua tam giac");
+                // Console.WriteLine("Nhap 3 canh cua tam giac");
+                // Console.Write("a = ");
+                // int a = Convert.ToInt32(Console.ReadLine());
+                // Console.Write("b = ");
+                // int b = Convert.ToInt32(Console.ReadLine());
+                // Console.Write("c = ");
+                // int c = Convert.ToInt32(Console.ReadLine());
+
+                // float p ;
+                // double S;
+
+                // p = (a+b+c)/2;
+                // S = Math.Sqrt(p*(p-a)*(p-b)*(p-c));
+
+                // if(a==b && b==c && c==a )
+                //     {
+                //         Console.WriteLine("Tam giac deu");
+                //         Console.WriteLine("Dien tich cua tam giac deu la: " + S);
+                //     }
+                // else if(a==b || b==c || c==a)
+                //     {
+                //         Console.WriteLine("Tam giac can");
+                //         Console.WriteLine("Dien tich tam giac deu la " + S);
+                //     }
+                //     else if(a*a == b*b+c*c || b*b == a*a+c*c || c*c == a*a+b*b)
+                //             {
+                //                 Console.WriteLine("Tam giac vuong");
+                //                 Console.WriteLine("Dien tich tam giac vuong la " + S);
+                //             }
+                //---------------------------------------------------------------------------------//
+
+                //Bai 7
+                Console.WriteLine("Giai phuong trinh bac nhat");
+                Console.WriteLine("Nhap a va b");
                 Console.Write("a = ");
-                int a = Convert.ToInt32(Console.ReadLine());
+                float a = Convert.ToSingle(Console.ReadLine());
                 Console.Write("b = ");
-                int b = Convert.ToInt32(Console.ReadLine());
-                Console.Write("c = ");
-                int c = Convert.ToInt32(Console.ReadLine());
+                float b = Convert.ToSingle(Console.ReadLine());
 
-                float p ;
-                double S;
+                double x;
+                x = -b/a;
 
-                p = (a+b+c)/2;
-                S = Math.Sqrt(p*(p-a)*(p-b)*(p-c));
-
-                if(a==b && b==c && c==a )
-                    {
-                        Console.WriteLine("Tam giac deu");
-                        Console.WriteLine("Dien tich cua tam giac deu la: " + S);
-                    }
-                else if(a==b || b==c || c==a)
-                    {
-                        Console.WriteLine("Tam giac can");
-                        Console.WriteLine("Dien tich tam giac deu la " + S);
-                    }
-                    else if(a*a == b*b+c*c || b*b == a*a+c*c || c*c == a*a+b*b)
-                            {
-                                Console.WriteLine("Tam giac vuong");
-                                Console.WriteLine("Dien tich tam giac vuong la " + S);
-                            }
+                if(a==0)
+                    Console.WriteLine("Phuong trinh vo nghiem");
+                else if(a!=0 && b!=0)
+                        Console.WriteLine("Nghiem phuong trinh la x=" + x);
+                    else if(a!=0 && b==0)
+                            Console.WriteLine("phuong trinh vo so nghiem");
+                
             }
         }
 }
