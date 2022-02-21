@@ -119,57 +119,86 @@ namespace BaiTap
 
                 //Bai 8
 
-                Console.WriteLine("Tinh phuong trinh bac hai");
-                Console.WriteLine("Nhap a va b va c");
-                Console.Write("a = ");
-                float a = Convert.ToSingle(Console.ReadLine());
-                Console.Write("b = ");
-                float b = Convert.ToSingle(Console.ReadLine());
-                Console.Write("c = ");
-                float c = Convert.ToSingle(Console.ReadLine());
+                // Console.WriteLine("Tinh phuong trinh bac hai");
+                // Console.WriteLine("Nhap a va b va c");
+                // Console.Write("a = ");
+                // float a = Convert.ToSingle(Console.ReadLine());
+                // Console.Write("b = ");
+                // float b = Convert.ToSingle(Console.ReadLine());
+                // Console.Write("c = ");
+                // float c = Convert.ToSingle(Console.ReadLine());
 
-                double delta,x1,x2,x;
-                delta = b*b - 4*a*c;
-                x = -b/(2*a);
-                x1 = (-b + Math.Sqrt(delta))/(2*a);
-                x2 = (-b - Math.Sqrt(delta))/(2*a);
+                // double delta,x1,x2,x;
+                // delta = b*b - 4*a*c;
+                // x = -b/(2*a);
+                // x1 = (-b + Math.Sqrt(delta))/(2*a);
+                // x2 = (-b - Math.Sqrt(delta))/(2*a);
 
-                if (a==0 && b==0 && c==0)
-                    Console.WriteLine("Cac gia tri khong duoc = 0 oke");
+                // if (a==0 && b==0 && c==0)
+                //     Console.WriteLine("Cac gia tri khong duoc = 0 oke");
 
-                if(a==0 && b!=0 && c!=0){
-                    double d;
-                    d = -c/b;
+                // if(a==0 && b!=0 && c!=0){
+                //     double d;
+                //     d = -c/b;
 
-                    if(b==0 && c!=0)
-                        Console.WriteLine("Phuong trinh vo nghiem");
-                    else if(b!=0 && c!=0)
-                            Console.WriteLine("Nghiem phuong trinh la x = " + d);
-                        else if(b!=0 && c==0)
-                                Console.WriteLine("phuong trinh vo so nghiem");
-                }
-                if(a!=0 && b!=0 && c!=0) {
-                    if(delta < 0)
-                        Console.WriteLine("Phuong trinh vo nghiem");
-                    else if(delta == 0)
-                            Console.Write("Phuong trinh co nghiem kep x = " + x);
-                        else{
-                            Console.WriteLine("Phuong trinh co 2 nghim phan biet");
-                            Console.Write("x1 = " + x1 + "\nx2 = " + x2);
-                        } 
-                }
-                if(a!=0 && b==0 && c!=0 && c>0) 
-                        Console.WriteLine("Phuong trinh vo nghiem");
-                else if(a!=0 && b==0 && c!=0 && c<0) {
-                        Console.WriteLine("Phuong trinh co 2 nghiem");
-                        Console.WriteLine("x1 =" + c + "\nx2 = " + -c);
-                }
-                if(a!=0 && b!=0 && c==0) {
-                    Console.WriteLine("Phuong trinh co 2 nghiem");
-                    Console.Write("x1 =" + 0 + "\nx2 =" + -b/a);
-                }else if(a!=0 && b==0 && c==0)
-                    Console.WriteLine("Phuong trinh co 1 nghiem   x = " + 0);
+                //     if(b==0 && c!=0)
+                //         Console.WriteLine("Phuong trinh vo nghiem");
+                //     else if(b!=0 && c!=0)
+                //             Console.WriteLine("Nghiem phuong trinh la x = " + d);
+                //         else if(b!=0 && c==0)
+                //                 Console.WriteLine("phuong trinh vo so nghiem");
+                // }
+                // if(a!=0 && b!=0 && c!=0) {
+                //     if(delta < 0)
+                //         Console.WriteLine("Phuong trinh vo nghiem");
+                //     else if(delta == 0)
+                //             Console.Write("Phuong trinh co nghiem kep x = " + x);
+                //         else{
+                //             Console.WriteLine("Phuong trinh co 2 nghim phan biet");
+                //             Console.Write("x1 = " + x1 + "\nx2 = " + x2);
+                //         } 
+                // }
+                // if(a!=0 && b==0 && c!=0 && c>0) 
+                //         Console.WriteLine("Phuong trinh vo nghiem");
+                // else if(a!=0 && b==0 && c!=0 && c<0) {
+                //         Console.WriteLine("Phuong trinh co 2 nghiem");
+                //         Console.WriteLine("x1 =" + c + "\nx2 = " + -c);
+                // }
+                // if(a!=0 && b!=0 && c==0) {
+                //     Console.WriteLine("Phuong trinh co 2 nghiem");
+                //     Console.Write("x1 =" + 0 + "\nx2 =" + -b/a);
+                // }else if(a!=0 && b==0 && c==0)
+                //     Console.WriteLine("Phuong trinh co 1 nghiem   x = " + 0);
+                //-----------------------------------------------------------------//
+                //Bai 9
+
+                // Console.WriteLine("Nhap so do cua goc (Phut)");
+                // Console.Write("x = ");
+                // double x = Convert.ToDouble(Console.ReadLine());
+
+                // x = x / 60; // doi phut thanh goc
+                // double goc = (x/9)%4; 
+                // Math.Ceiling(x);
+                // Console.WriteLine("X thuoc goc vuong thu " + (x/9)%4);
+                // Console.WriteLine("cos(x) = " + Math.Cos(x * 3.14/180));
+                //----------------------------------------------------------------//
+                //Bai 10
+                // Console.Write("Thang: ");
+                // int m = Convert.ToInt32(Console.ReadLine());
+
+                // if(m>12)
+                //     Console.WriteLine("Co thang lon hon 12 a?? Nhap lai!!");
+                // if(m==1 || m==2 || m==3 || m==4){
+                //     Console.WriteLine("Thang do thuoc quy 1");
+                // }else if(m==5 || m==6 || m==7 || m==8){
+                //         Console.WriteLine("Thang do thuoc quy 2");
+                // }else if(m==9 || m==10 || m==11 || m==12) {
+                //         Console.WriteLine("Thang do thuoc quy 3");
+                //     }   
+                //---------------------------------------------------------------//
+                //Bai 10
                 
+
             }
         }
 }
